@@ -26,7 +26,15 @@
     <url>http://192.168.96.128:8081/nexus/content/repositories/snapshots/</url>
     </snapshotRepository>
   </distributionManagement>
-  
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.5.3</version>
+      </plugin>
+    </plugins>
+  </build>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
